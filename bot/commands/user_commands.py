@@ -25,7 +25,7 @@ class AboutCommand(Command):
         return self.translator.translate("Shows information about the bot")
 
     def __call__(self, arg: str, user: User) -> Optional[str]:
-        return app_vars.client_name + "\n" + app_vars.about_text(self.translator)
+        return app_vars.about_text(self.translator)
 
 
 class PlayPauseCommand(Command):
