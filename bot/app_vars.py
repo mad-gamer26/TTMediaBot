@@ -7,7 +7,7 @@ if TYPE_CHECKING:
 
 app_name = "TeamTalk Player"
 app_version = "3.0.0"
-client_name = "TeamTalk-Player-" + app_version
+client_name = "TeamTalk Player " + app_version
 about_text: Callable[[Translator], str] = lambda translator: translator.translate(
     """\
 TeamTalk Player {version}: plays music from YouTube, Apple Music and internet radio in TeamTalk.
@@ -19,7 +19,7 @@ Home page: https://github.com/mad-gamer26/TeamTalk-Player\
 
 def is_player_client(client_name: str) -> bool:
     """Another player (this one or the original TTMediaBot): its messages are ignored, so bots never answer each other."""
-    return client_name.startswith(("TeamTalk-Player", "TTMediaBot"))
+    return client_name.startswith(("TeamTalk Player", "TeamTalk-Player", "TTMediaBot"))
 
 
 fallback_service = "yt"
