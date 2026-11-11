@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Your settings and what the player remembers (one set per installation).
+config.json
+*.dat
+*.log
+am_matches.json
+am_matches.json.tmp
+event_handlers.py
+
+# BearWare's separately licensed TeamTalk SDK is never committed.
+TeamTalk_DLL/
+TeamTalkPy/
+teamtalk-sdk/
+TTSDK_license.txt
